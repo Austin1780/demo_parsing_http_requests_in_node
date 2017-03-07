@@ -9,6 +9,7 @@ var port = process.env.PORT ||
 var host = 'localhost';
 
 
+// Delegate the server callback to the router
 var server = http.createServer(router.handle);
 
 
