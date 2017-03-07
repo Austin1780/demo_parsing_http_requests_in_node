@@ -8,6 +8,11 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
+  var data = req.body;
+  if (req.headers['content-type'] === 'application/json') {
+    data = JSON.parse(req.body);
+    data = JSON.stringify(data, null, 2);
+  }
   res.end(`Data: ${ req.body }`);
 });
 
