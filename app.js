@@ -1,6 +1,6 @@
 var http = require('http');
 var router = require('./lib/router');
-var routes = require('./routes');
+require('./routes');
 
 
 var port = process.env.PORT ||

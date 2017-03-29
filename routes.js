@@ -21,9 +21,9 @@ router.post('/', (req, res) => {
   }
 
   // Output the POST data
-  res.end(`Data: ${ req.body }`);
+  res.end(`Data: ${ data }`);
 });
 
 
-module.exports = router.routes;
+
 
